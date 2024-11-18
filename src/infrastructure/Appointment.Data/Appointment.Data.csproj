@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\Appointment.Domain\Appointment.Domain.csproj" />
+    <ProjectReference Include="..\..\core\Appointment.Application\Appointment.Application.csproj" />
+    <ProjectReference Include="..\Appointment.Shared\Appointment.Shared.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>
