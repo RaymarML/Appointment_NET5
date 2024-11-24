@@ -1,13 +1,12 @@
 
+using Appointment.Data;
+using Appointment.Application;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Appointment.Data.Contexts;
-using Appointment.Data;
 
 namespace Appointment.WebApi
 {
@@ -22,6 +21,7 @@ namespace Appointment.WebApi
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCoreApplication();
             services.AddInfrastructureData();
             services.AddControllers();
             services.AddSwaggerGen(c =>
