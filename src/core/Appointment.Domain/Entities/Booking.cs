@@ -11,10 +11,10 @@ namespace Appointment.Domain.Entities
     }
 
     public int Id { get; set; }
+    public int AssignedEmployeeId { get; set; }
+    public int ClientId { get; set; }
     public DateTime CreatedAt { get; set; }
     // public Employee Creator { get; set; }
-    public Employee AssignedEmployee { get; set; }
-    public Client Client { get; set; }
     public DateTime From { get; set; }
     public DateTime To { get; set; }
     public float ExpectedPrice { get; set; }
@@ -22,6 +22,8 @@ namespace Appointment.Domain.Entities
     public float Discount { get; set; }
     public bool Cancelled { get; set; }
     public string CancellationReason { get; set; }
+    public Employee AssignedEmployee { get; set; }
+    public Client Client { get; set; }
     public IList<ServiceRequest> ServiceRequests { get; set; }
     // public Schedule Schedule { get; set; }
   }
