@@ -469,7 +469,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
-          "Appointment.Domain": "1.0.0"
+          "Appointment.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.7"
         },
         "compile": {
           "bin/placeholder/Appointment.Application.dll": {}
