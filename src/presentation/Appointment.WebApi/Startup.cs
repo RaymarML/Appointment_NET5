@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Appointment.Data.Contexts;
+using Appointment.Data;
 
 namespace Appointment.WebApi
 {
@@ -21,9 +22,7 @@ namespace Appointment.WebApi
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options 
-                => options.UseSqlite("DataSource=AppointmentDatabase.sqlite3")
-            );
+            services.AddInfrastructureData();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
