@@ -1,0 +1,110 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "Appointment.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Appointment.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Appointment.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Appointment.Application.dll": {}
+        }
+      },
+      "Appointment.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Appointment.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Appointment.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Appointment.Application/1.0.0": {
+      "type": "project",
+      "path": "../../core/Appointment.Application/Appointment.Application.csproj",
+      "msbuildProject": "../../core/Appointment.Application/Appointment.Application.csproj"
+    },
+    "Appointment.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../core/Appointment.Domain/Appointment.Domain.csproj",
+      "msbuildProject": "../../core/Appointment.Domain/Appointment.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "Appointment.Application >= 1.0.0",
+      "Appointment.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Raymar\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\DEVELOPMENT\\C#\\PROJECTS\\Appointment\\src\\infrastructure\\Appointment.Shared\\Appointment.Shared.csproj",
+      "projectName": "Appointment.Shared",
+      "projectPath": "D:\\DEVELOPMENT\\C#\\PROJECTS\\Appointment\\src\\infrastructure\\Appointment.Shared\\Appointment.Shared.csproj",
+      "packagesPath": "C:\\Users\\Raymar\\.nuget\\packages\\",
+      "outputPath": "D:\\DEVELOPMENT\\C#\\PROJECTS\\Appointment\\src\\infrastructure\\Appointment.Shared\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Raymar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "D:\\DEVELOPMENT\\C#\\PROJECTS\\Appointment\\src\\core\\Appointment.Application\\Appointment.Application.csproj": {
+              "projectPath": "D:\\DEVELOPMENT\\C#\\PROJECTS\\Appointment\\src\\core\\Appointment.Application\\Appointment.Application.csproj"
+            },
+            "D:\\DEVELOPMENT\\C#\\PROJECTS\\Appointment\\src\\core\\Appointment.Domain\\Appointment.Domain.csproj": {
+              "projectPath": "D:\\DEVELOPMENT\\C#\\PROJECTS\\Appointment\\src\\core\\Appointment.Domain\\Appointment.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

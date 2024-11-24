@@ -1,10 +1,4 @@
-src/core/Appointment.Application/bin
-src/core/Appointment.Application/obj
-src/core/Appointment.Domain/bin
-src/core/Appointment.Domain/obj
-src/infrastructure/Appointment.Data/bin
-src/infrastructure/Appointment.Data/obj
-src/infrastructure/Appointment.Shared/bin
-src/infrastructure/Appointment.Shared/obj
-src/presentation/Appointment.WebApi/bin
-src/presentation/Appointment.WebApi/obj
+*/**/bin/Debug
+*/**/bin/Release
+*/**/obj/Debug
+*/**/obj/Release
