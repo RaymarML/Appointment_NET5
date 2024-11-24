@@ -1,6 +1,7 @@
 
 using Appointment.Data;
 using Appointment.Application;
+using Appointment.Shared;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -23,6 +24,8 @@ namespace Appointment.WebApi
         {
             services.AddCoreApplication();
             services.AddInfrastructureData();
+            services.AddInfrastructureShared(Configuration);
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
